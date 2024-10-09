@@ -49,11 +49,16 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 #custom stuff for now
-exec --no-startup-id picom
-
-exec --no-startup-id nitrogen
 
 exec setxkbmap -layout de
+
+#---Personal_Apps---
+
+#Wallpaper
+exec --no-startup-id nitrogen --restore
+
+#piCompton
+exec --no-startup-id picom
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal

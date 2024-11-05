@@ -1,0 +1,11 @@
+vim.opt.termguicolors = true
+require("config.keymaps")
+require("config.lazy")
+require("plugin_config.lsp-init")
+--require("plugin_config.theme")
+vim.cmd(":set number relativenumber")
+vim.cmd(":se cursorline")
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=4")
+vim.cmd("set shiftwidth=4")
+vim.cmd("colorscheme koehler")

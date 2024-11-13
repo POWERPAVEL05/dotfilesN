@@ -16,3 +16,7 @@ vim.api.nvim_set_keymap('n','<C-k>','<C-w>k',{noremap = true})
 
 --Save
 vim.api.nvim_set_keymap('n','<C-s>',':w<CR>',{noremap = true})
+
+--Diagnostic
+vim.api.nvim_set_keymap('n','<C-I>',':lua vim.diagnostic.open_float()<cr>',{noremap = true})
+vim.api.nvim_set_keymap('n','<C-i>',':lua vim.diagnostic.goto_next()<cr>',{noremap = true})

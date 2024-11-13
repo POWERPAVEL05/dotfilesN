@@ -2,6 +2,7 @@ vim.opt.termguicolors = true
 require("config.keymaps")
 require("config.lazy")
 require("plugin_config.lsp-init")
+require("ibl").setup()
 --require("plugin_config.theme")
 vim.cmd(":set number relativenumber")
 vim.cmd(":se cursorline")
